@@ -20,16 +20,16 @@
  --font-family-lato: "Lato", sans-serif;
 
  --container-center: true;
- --container-padding: 16px;
+ /* --container-padding: 16px; */
 
- --max-width-container: 1192px;
+ --max-width-container: 1440px;
 }
 
 @layer base {
  body {
   margin: 0;
   font-family: var(--font-family-rubik);
-  padding: 0 124px;
+  /* padding: 0 124px; */
  }
 
  h3 {
@@ -44,6 +44,9 @@
 @layer components {
  .container {
   max-width: var(--max-width-container);
+  padding: 72px 124px;
+  width: 1192px;
+  margin: 0 auto;
  }
 }
 .react-calendar {

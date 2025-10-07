@@ -1,7 +1,6 @@
-// src/components/DriverCard.tsx
 import React from "react";
-import InstagramIcon from "../assets/icons/instagram.svg";
-import LinkedinIcon from "../assets/icons/linkedin.svg";
+import InstagramIcon from "../assets/icons/insta.svg";
+import LinkedinIcon from "../assets/icons/ln.svg";
 
 interface DriverCardProps {
  name: string;
@@ -12,20 +11,20 @@ interface DriverCardProps {
 }
 
 const DriverCard: React.FC<DriverCardProps> = ({name, experience, imageUrl, className = ""}) => {
- const cardClasses = `p-6 flex flex-col items-center text-center rounded-1 border border-[#D6DDEB] h-full transition-all duration-300 ${className}`;
+ const cardClasses = `p-6 flex flex-col items-center text-center rounded-1 border border-[#D6DDEB] h-[243px]  transition-all duration-300 ${className}`;
 
  return (
   <div className={cardClasses}>
    <img
     src={imageUrl}
     alt={`Водій ${name}`}
-    className="w-[120px] h-[120px] rounded-full object-cover mb-4"
+    className="w-[80px] h-[80px] rounded-full object-cover mb-4"
    />
 
    <h4 className="text-lg font-semibold text-neutrals mb-1">{name}</h4>
-   <p className="text-sm font-normal text-text-gray mb-4">{experience}</p>
+   <p className="text-sm font-normal text-[#7C8493] mb-4">{experience}</p>
 
-   <div className="flex space-x-3 mt-auto">
+   <div className="flex gap-4 mt-auto ">
     <a
      href="#"
      aria-label="Instagram"
@@ -33,7 +32,7 @@ const DriverCard: React.FC<DriverCardProps> = ({name, experience, imageUrl, clas
      <img
       src={InstagramIcon}
       alt="Instagram"
-      className="w-5 h-5 opacity-60 hover:opacity-100 transition"
+      className="w-4 h-4 color-[#7C8493] hover:opacity-100 transition"
      />
     </a>
     <a
@@ -43,7 +42,7 @@ const DriverCard: React.FC<DriverCardProps> = ({name, experience, imageUrl, clas
      <img
       src={LinkedinIcon}
       alt="LinkedIn"
-      className="w-5 h-5 opacity-60 hover:opacity-100 transition"
+      className="w-4 h-4 color-[#7C8493] hover:opacity-100 transition"
      />
     </a>
    </div>

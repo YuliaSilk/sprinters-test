@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 const BreadCrunbs: React.FC = () => {
  return (
-  <div className="w-[1320px]  mx-auto mt-10 mb-10 ">
+  <div className=" mt-10 mb-10 ">
    <nav className="text-sm text-gray-500 py-4">
     <Link
      to="/"

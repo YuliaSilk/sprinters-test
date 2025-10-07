@@ -33,9 +33,9 @@ const Countries: React.FC = () => {
       <path
        d="M15 1.5L8 8.5L1 1.5"
        stroke="currentColor"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-linejoin="round"
+       strokeWidth="2"
+       strokeLinecap="round"
+       strokeLinejoin="round"
       />
      </svg>
     </span>

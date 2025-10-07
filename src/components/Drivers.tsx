@@ -20,7 +20,7 @@ const drivers = [
 const DriversSection: React.FC = () => {
  const cardWidthClass = "w-[240px]";
  return (
-  <section className="container w-full py-16">
+  <section className="container w-full">
    <div className="flex justify-between items-center mb-10">
     <h3>Наші водії</h3>
     <a
@@ -33,7 +33,7 @@ const DriversSection: React.FC = () => {
 
    <div className="overflow-x-auto pb-4 snap-x snap-mandatory">
     <div
-     className="flex space-x-6 w-max"
+     className="flex space-x-4 w-max"
      //  className="grid gap-6"
      style={{gridTemplateColumns: `repeat(${drivers.length}, minmax(220px, 1fr))`}}
     >

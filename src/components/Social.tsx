@@ -18,6 +18,7 @@ const Social: React.FC = () => {
   <div className="flex gap-4 items-center">
    {socialsDtata.map((social) => (
     <a
+     key={social.text}
      href={social.link}
      className="flex items-center  h-10 gap-2 px-6 py-3  text-primary  hover:bg-purple-100 transition font-medium border border-solid border-1-primary "
     >
