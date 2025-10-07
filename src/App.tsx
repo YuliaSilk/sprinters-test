@@ -1,11 +1,26 @@
-import "./App.css";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Layout from "./pages/Layout";
+import {Home} from "./pages/Home";
 
 function App() {
  return (
-  <>
-   <div></div>
-   <h1>Vite + React</h1>
-  </>
+  <BrowserRouter>
+   <Routes>
+    <Route
+     path="/"
+     element={<Layout />}
+    >
+     <Route
+      index
+      element={<Home />}
+     />
+     <Route
+      path="profile"
+      element={<div>Сторінка Перевізникам</div>}
+     />
+    </Route>
+   </Routes>
+  </BrowserRouter>
  );
 }
 
