@@ -1,4 +1,4 @@
-import BackgroundPattern from "../assets/Patterns.svg";
+import BackgroundPattern from "../assets/patterns.svg";
 import StripeLogo from "../assets/images/stripe_logo.png";
 
 import BreadCrunbs from "../components/ui/BreadCrunbs";

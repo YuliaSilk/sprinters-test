@@ -1,9 +1,9 @@
 import React from "react";
-import Facebook from "../../assets/icons/Facebook.svg";
+import Facebook from "../../assets/icons/facebook.svg";
 import Instagram from "../../assets/icons/instagram.svg";
-import Dribbble from "../../assets/icons/Dribbble.svg";
+import Dribbble from "../../assets/icons/dribbble.svg";
 import Linkedin from "../../assets/icons/linkedIn.svg";
-import Twitter from "../../assets/icons/twitter1.svg";
+import Twitter from "../../assets/icons/twitter.svg";
 // import Phone from "../../assets/icons/phone.svg";
 // import Mail from "../../assets/icons/sms.svg";
 
@@ -14,7 +14,6 @@ const Footer: React.FC = () => {
   <footer className="bg-[#1F2937]  w-full">
    <div className="container">
     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-     {/* Company Info */}
      <div>
       <div className="flex items-center gap-2 mb-4">
        <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
@@ -25,7 +24,6 @@ const Footer: React.FC = () => {
       <p className="text-gray-400 text-sm">Платформа пошуку перевізників та бронювання поїздок</p>
      </div>
 
-     {/* Clients Links */}
      <div>
       <h3 className="text-white font-bold mb-4">Клієнтам</h3>
       <ul className="space-y-2">
@@ -42,7 +40,6 @@ const Footer: React.FC = () => {
       </ul>
      </div>
 
-     {/* Carriers Links */}
      <div>
       <h3 className="text-white font-bold mb-4">Перевізникам</h3>
       <ul className="space-y-2">
@@ -59,7 +56,6 @@ const Footer: React.FC = () => {
       </ul>
      </div>
 
-     {/* Contact */}
      <div>
       <h3 className="text-white font-bold mb-4">Зворотній зв'язок</h3>
       <p className="text-gray-400 text-sm mb-4">Маєш пропозиції щодо покращення сервісу - пиши нам!</p>
