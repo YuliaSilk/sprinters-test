@@ -2,7 +2,7 @@ import IconWeb from "../assets/icons/www_icon.svg";
 import IconPhone from "../assets/icons/phone.svg";
 const AdressData: React.FC = () => {
  return (
-  <address className="not-italic  w-[390px] flex items-center justify-between mb-3">
+  <address className="not-italic  w-[390px] flex flex-col md:flex-row lg:items-center justify-between mb-3">
    <div className="flex items-center gap-2">
     <img
      src={IconWeb}

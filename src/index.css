@@ -40,10 +40,13 @@
 
 @layer components {
  .container {
-  max-width: var(--max-width-container);
-  padding: 72px 124px;
-  width: 1192px;
-  margin: 0 auto;
+  @apply mx-auto max-w-[1440px] w-full;
+
+  @apply px-[124px] py-[72px]
+           xl:px-[80px] xl:py-[64px]
+           lg:px-[48px] lg:py-[56px]
+           md:px-[24px] md:py-[40px]
+           sm:px-[16px] sm:py-[32px];
  }
 }
 .react-calendar {

@@ -1,127 +1,217 @@
-# React + TypeScript + Vite
+# Sprinters Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Тестовий проєкт інтерфейсу платформи Sprinters — пошуку перевізників, бронювання поїздок, демонстраційної верстки інтерфейсу.
 
-Currently, two official plugins are available:
+## 📁 Стек технологій & інструменти
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- ESLint
+- React Router
+- SVG / зображення як assets
+- (Опціонально) SVGR для імпорту SVG як компонентів
 
-## React Compiler
+---
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🚀 Як запустити проект локально
 
-## Expanding the ESLint configuration
+1. **Клонувати репозиторій**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+   ```bash
+   git clone https://github.com/YuliaSilk/sprinters-test.git
+   cd sprinters-test
+   ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Sprinters Test
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Тестовий проєкт інтерфейсу платформи Sprinters — пошуку перевізників, бронювання поїздок, демонстраційної верстки інтерфейсу.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Стек технологій & інструменти
+
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- ESLint
+- React Router
+- SVG / зображення як assets
+- (Опціонально) SVGR для імпорту SVG як компонентів
+
+---
+
+## 🚀 Як запустити проект локально
+
+1. **Клонувати репозиторій**
+
+   ```bash
+   git clone https://github.com/YuliaSilk/sprinters-test.git
+   cd sprinters-test
+   ```
+
+2. **Встановити залежності**
+
+   npm install
+
+   # або
+
+   yarn install
+
+3. **Запустити у режимі розробки**
+
+   npm run dev
+
+   # або
+
+   yarn dev
+
+4. **Збірка для продакшен**
+
+   npm run build
+
+   # або
+
+   yarn build
+
+## 🚀 Як запустити проект локально
+
+    sprinters-test/
+    ├── public/
+    │   └── favicon.svg
+    ├── src/
+    │   ├── assets/
+    │   │   ├── icons/
+    │   │   ├── images/
+    │   ├── components/
+    │   │   ├── layout/
+    │   │   ├── ui/
+    │   │   ├── TestimonialsSection.tsx
+    │   │   └── TestimonialCard.tsx
+    │   ├── data/
+    │   │   └── testimonials.ts
+    │   ├── pages/
+    │   ├── App.tsx
+    │   └── main.tsx
+    ├── index.css
+    ├── vite.config.ts
+    ├── tsconfig.json
+    └── package.json
+
+## 🎯 Особливості реалізації
+
+    •	Адаптивність: на великих екранах відгуки поряд з текстом, на менших — під текстом.
+    •	Фон + патерн: реалізовано через абсолютні блоки під секцією, щоб фон був на всю ширину, а патерн накладався зверху.
+    •	Контейнер: обмеження ширини контенту через клас container (max-width + паддінги).
+    •	SVG / PNG імпорти: зображення імпортуються як ресурси — import bg from '...'; — і використовуються через <img>.
+    •	Tailwind конфіг: кастомні кольори, шрифти (Rubik, Lato), брейкпоінти, utility-класи.
+
+## 🛠 Поради / можливі покращення
+
+    •	Додати SVGR плагін (vite-plugin-svgr), щоб імпортувати SVG як React-компоненти.
+    •	Додати Switch темної / світлої теми, і відповідні стилі.
+    •	Реалізувати повний слайдер (наприклад, з анімацією), а не простий flex overflow-x.
+    •	Оптимізувати зображення (WebP, lazy loading).
+    •	Додати тестування (Jest, Testing Library).
+    •	Додати SEO метадані, фавікон логіку, Open Graph.
+
+## ✅ Ліцензія
+
+Проєкт ліцензовано під MIT License — дивись файл LICENSE.
+
+# Sprinters Test
+
+A test project showcasing a modern landing page layout for **Sprinters**, a booking and transportation platform.  
+The goal of this project is to demonstrate clean UI composition, responsive layout, and reusable React components styled with **Tailwind CSS**.
+
+---
+
+## 🚀 Tech Stack
+
+- ⚛️ **React + TypeScript**
+- ⚡ **Vite**
+- 💨 **Tailwind CSS**
+- 🧩 **ESLint + Prettier**
+- 🖼️ **SVG & WebP assets**
+- 🧱 **Modular component structure**
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YuliaSilk/sprinters-test.git
+cd sprinters-test
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# or
 
+yarn install
 
+### 3. Start the development server
 
-/** @type {import('tailwindcss').Config} */
-export default {
- content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
- theme: {
-  screens: {
-   sm: "390px",
-   md: "768px",
-   lg: "1024px",
-   xl: "1280px",
-   "2xl": "1536px",
-  },
-  container: {
-   center: true,
-   padding: "16px",
-   screens: {
-    sm: "390px",
-    md: "768px",
-    lg: "1024px",
-    xl: "1280px",
-    "2xl": "1320px",
-   },
-  },
-  extend: {
-   colors: {
-    primary: "#4640DE",
-    accent: "#26A4FF",
-    "text-gray": "#444444",
-    "bg-light": "#F3F4F6",
-    neutrals: "#25324B",
-   },
-   fontFamily: {
-    // sans: ["Poppins", "sans-serif"],
-    rubik: ["Rubik", "sans-serif"],
-    lato: ["Lato", "sans-serif"],
-   },
-   fontSize: {
-    "body-sb": [
-     "16px",
-     {
-      lineHeight: "160%",
-      fontWeight: "600",
-     },
-    ],
-   },
-   maxWidth: {
-    container: "1192px",
-   },
-  },
- },
- plugins: [],
-};
+npm run dev
+
+# or
+
+yarn dev
+
+### 4. Build for production
+
+npm run build
+
+## 📂 Project Structure
+
+sprinters-test/
+├── public/
+│ └── favicon.svg
+├── src/
+│ ├── assets/
+│ │ ├── icons/
+│ │ └── images/
+│ ├── components/
+│ │ ├── layout/
+│ │ ├── ui/
+│ │ ├── TestimonialsSection.tsx
+│ │ └── TestimonialCard.tsx
+│ ├── data/
+│ │ └── testimonials.ts
+│ ├── pages/
+│ ├── App.tsx
+│ └── main.tsx
+├── index.css
+├── vite.config.ts
+├── tsconfig.json
+└── package.json
+
+## ✨ Features
+
+    •	Responsive layout — testimonial cards move below text and button on smaller screens.
+    •	Custom Tailwind theme — extended breakpoints, colors, and typography.
+    •	Layered background — implemented with absolutely positioned image and pattern.
+    •	Reusable UI components — button, testimonial card, and section structure.
+    •	Semantic HTML & accessible color contrast.
+
+## 🧠 Possible Improvements
+
+    •	Add testimonial slider (e.g., Swiper.js or Framer Motion).
+    •	Use SVGR to import SVGs as React components.
+    •	Add dark/light theme switcher.
+    •	Implement lazy loading for images.
+    •	Add unit tests with Jest + Testing Library.
+    •	Extend SEO metadata (Open Graph & Twitter cards).
+
+## 🪪 License
+
+This project is licensed under the MIT License — you are free to use, modify, and distribute it.
+
+## 👩‍💻 Author
+
+Yulia Shevchuk
+Frontend Developer — building fast, accessible, and responsive user interfaces.
+🔗 GitHub Profile

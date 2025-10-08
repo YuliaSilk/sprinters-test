@@ -9,7 +9,7 @@ import Button from "./ui/Button";
 
 const TestimonialsSection: React.FC = () => {
  return (
-  <section className="relative  h-[580px] ">
+  <section className="relative md:h-[860px] xl:h-[580px]  ">
    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-screen h-full -z-10">
     <div className="absolute top-0 left-0 w-full h-full">
      <img
@@ -29,8 +29,8 @@ const TestimonialsSection: React.FC = () => {
    </div>
 
    <div className="container  relative z-10">
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-     <div className="lg:col-span-6 pr-0 lg:pr-8 ">
+    <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start">
+     <div className="xl:col-span-6 pr-0 xl:pr-8 order-1 xl:order-1">
       <h3 className="text-4xl md:text-[48px]   font-extrabold text-neutrals mb-6">
        Що <span className="text-accent whitespace-nowrap">кажуть люди?</span>
       </h3>
@@ -44,8 +44,8 @@ const TestimonialsSection: React.FC = () => {
       <Button className="bg-primary text-white px-6 py-3 rounded-[6px] font-semibold shadow-md">Залишити відгук</Button>
      </div>
 
-     <div className="lg:col-span-6">
-      <div className="hidden lg:flex items-start justify-end gap-8 mb-8">
+     <div className="xl:col-span-6 order-2 xl:order-2">
+      <div className="flex flex-col items-center justify-center md:flex-row md:items-start md:justify-end gap-8 mb-8">
        {" "}
        {testimonials.slice(0, 2).map((t) => (
         <TestimonialCard

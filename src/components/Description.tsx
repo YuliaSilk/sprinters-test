@@ -4,8 +4,8 @@ import Countries from "../components/Countries";
 import Calendar from "../components/Calendar";
 const Description: React.FC = () => {
  return (
-  <section className="container w-full pt-[524px]  gap-16 flex">
-   <div className=" w-[752px] flex flex-col gap-6">
+  <section className="container w-full pt-[524px] md:pt-[440px] xl:pt-[524px] gap-16 flex flex-col xl:flex-row">
+   <div className=" w-full xl:w-[752px] flex flex-col gap-6">
     <div className="w-full pt-[72px] gap-4">
      <h3 className="font-lato text-[32px] font-extrabold">Опис перевізника</h3>
      <p className="font-rubic text-[16px] text-[#515B6F] mt-3">
@@ -24,7 +24,7 @@ const Description: React.FC = () => {
     </div>
     <Gallery />
    </div>
-   <div className="pt-[72px] flex flex-col gap-6 w-[376px]">
+   <div className="xl:pt-[72px] flex flex-col md:flex-row justify-between xl:flex-col gap-6 md:gap-12 xl:gap-6 w-[376px] md:w-full xl:w-[376px]">
     <Countries />
     <Calendar />
    </div>

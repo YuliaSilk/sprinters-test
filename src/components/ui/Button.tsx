@@ -9,7 +9,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button: React.FC<ButtonProps> = ({
  children,
- backgroundClass = "bg-blue-600",
+ backgroundClass = "bg-primary",
  textClass = "text-white",
  rounded = "",
  className = "",
@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
  return (
   <button
-   className={`flex justify-center items-center px-6 py-3 gap-2 ${backgroundClass} ${textClass} ${rounded} ${className}`}
+   className={`flex justify-center items-center px-4 xl:px-6 py-3 gap-2 ${backgroundClass} ${textClass} ${rounded} ${className}`}
    {...rest}
   >
    {children}

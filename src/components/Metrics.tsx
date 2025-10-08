@@ -14,7 +14,7 @@ const stats = [
 
 const Metrics: React.FC = () => {
  return (
-  <div className="flex justify-between gap-8">
+  <div className="flex flex-wrap justify-between gap-2 lg:gap-4 xl:gap-8 w-full">
    {stats.map((stat, index) => (
     <div
      key={index}
