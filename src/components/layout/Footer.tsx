@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../assets/images/logof.png";
-import Facebook from "../../assets/icons/facebook.svg";
+import Facebook from "../../assets/icons/facebookf.svg";
 import Instagram from "../../assets/icons/instagram.svg";
 import Dribbble from "../../assets/icons/Dribbble.svg";
 import Linkedin from "../../assets/icons/linkedIn.svg";
