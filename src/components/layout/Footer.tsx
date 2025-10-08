@@ -1,7 +1,7 @@
 import React from "react";
-import Facebook from "../../assets/icons/facebook.svg";
+import Facebook from "../../assets/icons/Facebook.svg";
 import Instagram from "../../assets/icons/instagram.svg";
-import Dribbble from "../../assets/icons/dribbble.svg";
+import Dribbble from "../../assets/icons/Dribbble.svg";
 import Linkedin from "../../assets/icons/linkedIn.svg";
 import Twitter from "../../assets/icons/twitter.svg";
 // import Phone from "../../assets/icons/phone.svg";
